@@ -26,3 +26,4 @@ public class Euler1 {
         return largestFactor;
     }
 }
+// Solution: 6857
