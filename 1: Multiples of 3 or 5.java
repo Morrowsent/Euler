@@ -9,3 +9,4 @@ public class Euler1 {
         System.out.println(count);
     }
 }
+// Solution: 233168
