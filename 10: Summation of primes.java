@@ -1,7 +1,7 @@
 public class Euler1 {
     public static void main(String[] args) {
         long sum = 0;
-        for(int i = 0; i <= 2000000; i++){
+        for(int i = 2; i <= 2000000; i++){
             if(isPrime(i)){
                 sum+=i;
             }
@@ -9,10 +9,7 @@ public class Euler1 {
         System.out.println(sum);
     }
     public static boolean isPrime(long num){
-        if(num % 2 == 0){
-            return false;
-        }
-        for(long j = 3; j <= Math.sqrt(num); j+=2){
+        for(long j = 2; j <= Math.sqrt(num); j++){
             if(num % j == 0){
                 return false;
             }
@@ -20,3 +17,4 @@ public class Euler1 {
         return true;
     }
 }
+// Solution: 142913828922
