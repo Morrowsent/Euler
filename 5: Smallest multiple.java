@@ -17,3 +17,4 @@ public class Euler1 {
         return true;
     }
 }
+// Solution: 232792560
