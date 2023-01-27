@@ -1,6 +1,6 @@
 public class Euler1 {
     public static void main(String[] args) {
-        int biggestProduct = 0;
+        long biggestProduct = 0;
         String thirteenDigits = "";
         String number = "73167176531330624919225119674426574742355349194934" +
                 "96983520312774506326239578318016984801869478851843" +
@@ -33,11 +33,12 @@ public class Euler1 {
         System.out.println(thirteenDigits);
 
     }
-    public static int productOf13 (String num){
-        int total = 1;
+    public static long productOf13 (String num){
+        long total = 1;
         for(int i = 0; i < num.length(); i++){
             total *= Integer.parseInt(num.substring(i,i+1));
         }
         return total;
     }
 }
+// Solution: 23514624000
