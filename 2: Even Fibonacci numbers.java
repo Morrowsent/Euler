@@ -15,3 +15,4 @@ public class Euler1 {
         System.out.println(count);
     }
 }
+// Solution: 4613732
