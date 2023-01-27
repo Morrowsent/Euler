@@ -23,3 +23,4 @@ public class Euler1 {
         return true;
     }
 }
+// Solution: 104743
