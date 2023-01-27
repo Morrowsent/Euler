@@ -18,3 +18,4 @@ public class Euler1 {
         System.out.println("Product: " + product);
     }
 }
+// Solution: 31875000
