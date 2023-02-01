@@ -1,22 +1,19 @@
+import java.math.BigInteger;
+
 public class Euler1 {
     public static void main(String[] args) {
-        int gridSize = 20;
-        int[][] grid = new int[gridSize][gridSize];
-        printGrid(grid);
-        for(int i = 0; i < gridSize; i++){
-            for(int j = 0; j < gridSize; j++){
-
-            }
+        BigInteger fac40 = new BigInteger("1");
+        for(int i = 40; i > 0; i--){
+            fac40 = fac40.multiply(new BigInteger(Integer.toString(i)));
         }
-    }
-
-    public static void printGrid(int[][] grid){
-        for(int i = 0; i < grid.length; i++){
-            System.out.println("");
-            for(int j = 0; j < grid[i].length; j++){
-                System.out.print(grid[i][j] + ", ");
-            }
+        BigInteger fac20 = new BigInteger("1");
+        for(int i = 20; i > 0; i--){
+            fac20 = fac20.multiply(new BigInteger(Integer.toString(i)));
         }
+        fac20 = fac20.multiply(fac20);
+        BigInteger result = new BigInteger("0");
+        result = fac40.divide(fac20);
+        System.out.println(result);
     }
-
 }
+// Solution: 137846528820
