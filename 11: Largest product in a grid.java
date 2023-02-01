@@ -82,3 +82,4 @@ public class Euler1 {
         }
     }
 }
+// Solution: 70600674
