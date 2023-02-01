@@ -7,7 +7,7 @@ public class Euler1 {
             for(long j = 1; j < i; j++){
                 sum += j;
             }
-            for(long j = 1; j < sum/2; j++){
+            for(long j = 1; j < Math.sqrt(sum); j++){
                 if(sum % j == 0){
                     numDivisor++;
                 }
