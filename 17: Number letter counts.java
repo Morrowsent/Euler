@@ -147,3 +147,4 @@ public class Euler1 {
         return numString;
     }
 }
+// Solution: 21124
